@@ -1,32 +1,54 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<title>Kwitter</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="style.css">
-<script src="kwitter.js"></script>
+<head>
+    <title>Collage Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js" type="text/javascript"></script>
+
 </head>
+
 <body>
 <center>
-	<h1 class="header">	
-		Kwitter	<sup>
-	<img src="m2.png">
-	</sup>
-</h1>
-	<div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
-	<img src="logo.png" class="logo">
-		<h3 >See what is happening in the world right now</h3>
-		<h4 >Join Kwitter today</h4>
-		<div class="form-group">
-		  <label >User Name:</label>
-		  <input type="text" id="user_name" class="form-control" placeholder="user name">
-		</div>
-		<button id="login_button" class="btn btn-primary" onclick="addUser()">Log in</button>
-		<br><br>
-	</div>
+    <h1>Collage web app </h1>
+    <hr>
+    <h4>please press allow as soon as popup comes. After you give voice command. </h4>
+
+    <h3>say "selfie" for taking your selfie to make a Collage</h3>
+
+    <button class="btn btn-lg btn-primary" onclick="start()">start</button>
+    <h4>press the start button</h4>
+
+    <label>your webcam : </label>
+    <div id="camera"></div>
+
+    <br>
+
+    <label>your selfie will display here</label>
+    <br>
+    <div id="resoltRow">
+        <div id="result1" class="column">
+            <img src="pic1.jpg">
+        </div>
+
+        <div id="result2" class="column">
+            <img src="pic2.jpg">
+        </div>
+
+        <div id="result3" class="column">
+            <img src="pic3.jpg">
+        </div>
+
+    </div>
+
 </center>
+<div class="copy_right_footer">
+developed by - Vetrivel
+</div>
+<script src="main.js"></script>
 </body>
+
 </html>
